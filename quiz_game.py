@@ -4,6 +4,7 @@ if playing != "yes":
     quit()
 
 print("Okay! Let's play :)")
+score = 0
 
 questions = {
     "What does CPU stand for? ": "central processing unit",
@@ -16,6 +17,8 @@ for question, correct_answer in questions.items():
     answer = input(question)
     if answer.lower() == correct_answer:
         print("Correct!")
+        score += 1
     else:
         print("Incorrect!")
-
+ 
+print("You got " + str(score) + " question correct!")
