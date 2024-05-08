@@ -22,3 +22,4 @@ for question, correct_answer in questions.items():
         print("Incorrect!")
  
 print("You got " + str(score) + " question correct!")
+print("You got " + str(score/4 * 100) + "%.")
